@@ -24,12 +24,8 @@ import java.io.FileReader;
 public class Part2 {
     public static void main(String[] args) throws Exception {
         File file = new File("/Users/Alinani/Desktop/Advent-of-code-2020/Day3/src/input.txt");
+        //cast result to long to avoid int max value limit
         System.out.println((long)right3down1(file) * right1down1(file) * right5down1(file) * right7down1(file) * right1down2(file));
-        System.out.println("Right 1, down 1: "+right1down1(file));
-        System.out.println("Right 3, down 1: "+right3down1(file));
-        System.out.println("Right 5, down 1: "+right5down1(file));
-        System.out.println("Right 7, down 1: "+right7down1(file));
-        System.out.println("Right 1, down 2: "+right1down2(file));
     }
 
     public static int right3down1(File file) throws Exception {
